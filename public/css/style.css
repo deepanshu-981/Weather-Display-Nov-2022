@@ -66,7 +66,7 @@ svg{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 46%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -98,8 +98,10 @@ svg{
 }
 
 .view-more-box{
+    margin: 10px;
+    /* border: 2px solid red; */
     width: 20%;
-    height: 300px;
+    height: 200px;
     position: absolute;
     bottom: 80px;
     left: 50%;
@@ -111,6 +113,7 @@ svg{
 }
 
 .view{
+    
     font-size: 25px;
     font-weight: 600;
     color: rgb(11, 10, 10);
@@ -120,7 +123,7 @@ svg{
 .svg{
     width: 22px;
     position: absolute;
-    top: 136px;
+    top: 206px;
     right: 15px;
     cursor: pointer;
     transition: 0.5s;
@@ -128,10 +131,12 @@ svg{
 
 .info-card{
     width: 300px;
-    height: 150px;
+    height: 100px;
     background: #20202075;
     position: absolute;
+   
     left: 50.4%;
+    
     transform: translateX(-50%);
     bottom: -350px;
     border-radius: 15px;
@@ -139,6 +144,10 @@ svg{
     padding-left: 30px;
     opacity: 0;
     transition: 0.7s;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    margin: 15px;
 }
 
 .flex{
@@ -147,12 +156,6 @@ svg{
     justify-content: space-between;
 }
 
-.info-card p{
-    font-size: 18px;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 15px;
-}
 
 .speed{
     position: relative;
