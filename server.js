@@ -21,11 +21,11 @@ app.post("/", async (req, res) => {
         let data = await response.json();
         let locDate = {};
         locDate.temp = Math.floor(data.main.temp);
-        locDate.disc = data.weather[0].description;
+        locDate.disc = data.weather[0].main;
         locDate.feel = data.main.feels_like;
         locDate.humidity = data.main.humidity;
         locDate.speed = data.wind.speed;
-        locDate.location = location;
+        locDate.location =location.charAt(0).toUpperCase() + location.slice(1); 
         locDate.country=data.sys.country;
         // console.log(data);
         console.log(locDate);

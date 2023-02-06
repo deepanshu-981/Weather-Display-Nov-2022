@@ -10,11 +10,28 @@
 </head>
 <body>
     <div class="container">
-        <img src="./images/weatherimg.jpg">
+        
+<% 
+if(locDate.disc === "Mist" || locDate.disc === "Fog" || locDate.disc==="Haze" )  { %> <img src="./images/mist.jpg">  <% }
+else if(locDate.disc === "Snow" )  { %> <img src="./images/snow.jpg">  <% }
+else if(locDate.disc === "Smoke" )  { %> <img src="./images/smoke.jpg">  <% }
+else if(locDate.disc === "Clear" )  { %> <img src="./images/clear.jpg">  <% }
+else if(locDate.disc === "Clouds" )  { %> <img src="./images/cloud.jpg">  <% }
+else if(locDate.disc === "Clear" )  { %> <img src="./images/clear.jpg">  <% }
+
+else if(locDate.disc === "Dust" || locDate.disc==="Sand" || locDate.disc==="Ash" || locDate.disc==="Tornado" || locDate.disc==="Squall")  { %> <img src="./images/dust.jpg">  <% }
+
+
+else if(locDate.disc === "Rain" || locDate.disc==="Drizzle" || locDate.disc==="Thunderstorm" )  { %> <img src="./images/dust.jpg">  <% }
+
+
+      else  { %> <img src="./images/else.jpg"> <% } 
+%>
+       
         <div class="search-box">
             <form action="/" method="post">
                 <input type="text" name="city" id="city" placeholder="Search for a city...." autocomplete="off">
-                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3c3c3c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                <button type="submit"></button>
             </form>
         </div>
 

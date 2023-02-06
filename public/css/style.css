@@ -38,12 +38,6 @@
     color: #3C3C3C;
 }
 
-svg{
-    position: absolute;
-    top: 50px;
-    right: 60px;
-    cursor: pointer;
-}
 
 .date-time{
     position: absolute;
@@ -84,8 +78,8 @@ svg{
     transform: translate(-50%, -50%);
 }
 .place-info, .temp, .disc{
-    font-size: 75px;
-    font-weight: 900;
+    font-size: 55px;
+    font-weight: 700;
     color: rgb(17, 16, 16);
     line-height: 80px;
 }
