@@ -16,9 +16,13 @@ app.get("/", (req, res) => {
 app.post("/", async (req, res) => {
     try {
         const location = await req.body.city;
+        console.log(typeof(location));
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.APIKEY}&units=metric`;
         let response = await fetch(url);
         let data = await response.json();
+      
+        console.log(typeof(response));
+        // console.log((data));
         let locDate = {};
         locDate.temp = Math.floor(data.main.temp);
         locDate.disc = data.weather[0].main;
